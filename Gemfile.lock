@@ -14,6 +14,8 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     bump (0.6.1)
     byebug (10.0.2)
     coderay (1.1.2)
@@ -29,6 +31,7 @@ GEM
       crack
       faraday
       multi_json
+    hashdiff (0.3.7)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (1.1.1)
@@ -41,6 +44,7 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     multipart-post (2.0.0)
+    mustermann (1.0.3)
     netrc (0.11.0)
     pry (0.12.0)
       coderay (~> 1.1.0)
@@ -48,18 +52,32 @@ GEM
     pry-byebug (3.6.0)
       byebug (~> 10.0)
       pry (~> 0.10)
+    public_suffix (3.0.3)
+    rack (2.0.6)
+    rack-protection (2.0.4)
+      rack
     rake (10.5.0)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     safe_yaml (1.0.4)
+    sinatra (2.0.4)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.4)
+      tilt (~> 2.0)
     thread_safe (0.3.6)
+    tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
+    webmock (3.4.2)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
 
 PLATFORMS
   ruby
@@ -72,6 +90,8 @@ DEPENDENCIES
   pry-byebug (~> 3.6.0)
   rake (~> 10.0)
   sepomex-client!
+  sinatra (~> 2.0.4)
+  webmock (~> 3.4.2)
 
 BUNDLED WITH
    1.16.1
