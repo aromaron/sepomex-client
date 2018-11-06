@@ -9,7 +9,7 @@ module Sepomex
     autoload :Config, 'sepomex/client/config'
     autoload :Entity, 'sepomex/client/entity'
 
-    BASE_URL = 'http://sepomex.icalialabs.com/api/v1'
+    BASE_URL = 'http://sepomex.icalialabs.com/api/v1'.freeze
 
     def self.config
       if block_given?

@@ -5,7 +5,7 @@ module Sepomex
         raise ArgumentError 'Zip Code must be provided' unless code
 
         response = RestClient::Request.new(
-          url: "#{Sepomex::Client::BASE_URL}/zip_codes",
+          url: "#{Sepomex::Client.config.base_url}/zip_codes",
           method: :get,
           payload: {
             zip_code: code
