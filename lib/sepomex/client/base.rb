@@ -9,7 +9,7 @@ module Sepomex
           message = result['errors'] || [result['error']]
           raise BadRequestError, message.to_a.join(', ')
         elsif (500..599).cover?(response.status)
-          raise ServerError, 'Server could not process request'
+          raise ServerError, "Server could not process your request: status #{response.status}"
         end
       end
     end
