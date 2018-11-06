@@ -7,7 +7,7 @@ module Sepomex
 
     autoload :Base, 'sepomex/client/base'
     autoload :Config, 'sepomex/client/config'
-    autoload :Entities, 'sepomex/client/entities'
+    autoload :Entity, 'sepomex/client/entity'
 
     BASE_URL = 'http://sepomex.icalialabs.com/api/v1'
 

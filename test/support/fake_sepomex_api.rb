@@ -1,7 +1,7 @@
 require 'sinatra/base'
 
-class FakeMifiel < Sinatra::Base
-  get '/api/v1/zipcodes' do
+class FakeSepomexApi < Sinatra::Base
+  get '/api/v1/zip_codes' do
     content_type :json
     status 200
     {
@@ -10,7 +10,7 @@ class FakeMifiel < Sinatra::Base
         entity
       ],
       meta: meta
-    }
+    }.to_json
   end
 
   private
