@@ -8,7 +8,7 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task :console do
-  exec 'irb -r sepomex-client -I ./lib'
+  exec 'irb -r sepomex/client -I ./lib'
 end
 
 task :default => :test
