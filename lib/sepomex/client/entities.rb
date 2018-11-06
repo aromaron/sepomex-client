@@ -1,5 +1,3 @@
-require 'rest-client'
-
 module Sepomex
   module Client
     class Entities < Sepomex::Client::Base

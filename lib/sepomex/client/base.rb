@@ -1,3 +1,5 @@
+require 'rest-client'
+
 module Sepomex
   module Client
     class Base < Flexirest::Base
