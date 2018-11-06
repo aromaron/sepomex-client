@@ -1,4 +1,9 @@
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require "sepomex/client"
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
-require "minitest/autorun"
+require 'pry'
+require 'byebug'
+require 'pry-byebug'
+
+require 'sepomex/client'
+
+require 'minitest/autorun'
