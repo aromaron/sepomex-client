@@ -1,8 +1,6 @@
 # Sepomex::Client
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sepomex/client`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+(WIP) Sepomex::Client its a ruby gem built with flexirest and rest-client to consume a Rails API containing all Mexico Zipcodes
 
 ## Installation
 
@@ -22,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can run queries as:
+
+```ruby
+# Gets all Zipcodes
+Sepomex::Client::Zipcode.all
+
+
+# Gets a Zipcode based on a neighborhood name
+Sepomex::Client::Zipcode.find_by_neighborhood('Lomas Verdes')
+
+
+TODO: Add More Examples
+```
 
 ## Development
 
