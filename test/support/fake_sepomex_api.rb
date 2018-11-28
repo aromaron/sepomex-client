@@ -1,13 +1,13 @@
 require 'sinatra/base'
 
 class FakeSepomexApi < Sinatra::Base
-  get '/api/v1/zip_codes' do
+  get '/api/v1/zipcodes/search' do
     content_type :json
     status 200
     {
       zipcodes: [
-        entity,
-        entity
+        zipcode,
+        zipcode
       ],
       meta: meta
     }.to_json
@@ -15,7 +15,7 @@ class FakeSepomexApi < Sinatra::Base
 
   private
 
-  def entity
+  def zipcode
     {
       id: 85829,
       d_codigo: '64000',

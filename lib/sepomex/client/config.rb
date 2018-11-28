@@ -4,6 +4,10 @@ module Sepomex
       class << self
         attr_reader :base_url
 
+        def reset
+          @base_url = Sepomex::Client::BASE_URL
+        end
+
         def base_url=(base_url)
           @base_url = base_url
           set_api_credentials
@@ -16,6 +20,8 @@ module Sepomex
           Flexirest::Base.request_body_type = :json
         end
       end
+
+      reset
     end
   end
 end
